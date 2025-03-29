@@ -121,11 +121,22 @@ function Header({ searchTerm, setSearchTerm, isDarkMode, toggleDarkMode, setActi
             <span className="text-xl font-bold text-blue-500">AIxplore</span>
           </Link>
 
+          {/* Add Search Input */}
+          <div className="hidden md:flex flex-1 mx-4">
+            <input
+              type="text"
+              placeholder="Search for AI tools by name or description..."
+              value={searchTerm || ''}
+              onChange={handleSearchChange}
+              className="w-full px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-blue-500"
+            />
+          </div>
+
           {/* Desktop Navigation - Moved to right */}
           <nav className="hidden md:flex items-center space-x-6">
             <div className="relative group">
               <button className="flex items-center text-gray-300 hover:text-white px-2 py-1 rounded-md transition-colors">
-                AI Toolssssssss
+                AI Tools
                 <ChevronDown className="ml-1 h-4 w-4" />
               </button>
               <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
