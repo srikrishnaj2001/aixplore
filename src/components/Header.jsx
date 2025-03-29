@@ -125,7 +125,7 @@ function Header({ searchTerm, setSearchTerm, isDarkMode, toggleDarkMode, setActi
           <nav className="hidden md:flex items-center space-x-6">
             <div className="relative group">
               <button className="flex items-center text-gray-300 hover:text-white px-2 py-1 rounded-md transition-colors">
-                AI Tools
+                AI Toolssssssss
                 <ChevronDown className="ml-1 h-4 w-4" />
               </button>
               <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
